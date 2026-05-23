@@ -105,9 +105,9 @@ export function HeroSection() {
               size="lg"
               className="w-full sm:w-auto gap-2"
             >
-              <Link href="#contact">
+              <Link href="https://cal.com/test223" target="_blank">
                 <Mail className="h-4 w-4" />
-                Contact Me
+                Book a Meeting
               </Link>
             </Button>
           </motion.div>

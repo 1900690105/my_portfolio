@@ -168,7 +168,11 @@ export function ContactSection() {
             >
               <Card className="bg-card/50 backdrop-blur-sm border-border/50">
                 <CardContent className="p-6">
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form
+                    action="https://formspree.io/f/mkoezjjv"
+                    method="POST"
+                    className="space-y-6"
+                  >
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <Label htmlFor="name">Name</Label>
@@ -225,9 +229,9 @@ export function ContactSection() {
                     </div>
 
                     <Button
-                      type="submit"
                       className="w-full"
                       size="lg"
+                      type="submit"
                       disabled={formState === "loading"}
                     >
                       {formState === "loading" ? (
